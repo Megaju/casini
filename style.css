@@ -1,0 +1,231 @@
+/* colors
+#090909
+#332424
+#553C3C
+#555555
+#A2A2A2
+
+#FFA000 -> #FFBC4C
+*/
+
+@font-face {
+    font-family: 'moonbold';
+    src: url('fonts/moon_bold-webfont.woff2') format('woff2'), url('fonts/moon_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'moonlight';
+    src: url('fonts/moon_light-webfont.woff2') format('woff2'), url('fonts/moon_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #cacaca;
+    background-image: url(images/ps_neutral.png);
+    color: whitesmoke;
+    font-family: "Open Sans";
+}
+
+.container {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 75px 0;
+    text-align: center;
+    background-color: #090909;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'moonlight', sans-serif;
+    color: #FFA000;
+}
+
+p {
+    font-size: .8em;
+    margin: 0;
+}
+
+
+.shadow {
+    background-color: #090909;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.shadow h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: "moonbold";
+    color: #FFA000;
+}
+
+.shadow p {
+    margin: 0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    font-family: "Open Sans";
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.menu-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #090909;
+    padding-left: 0px;
+}
+
+.menu-top-container ul li {
+    display: inline-block;
+    padding: 5px;
+    font-family: "moonlight";
+    cursor: pointer;
+}
+
+.menu-top-container ul a {
+    text-decoration: none;
+    padding: 20px;
+    color: whitesmoke;
+    border: 1px solid #555555;
+}
+
+.menu-top-container ul a:hover {
+    border: 1px solid transparent;
+}
+
+
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+
+.sidebar {
+    max-width: 20%;
+    min-width: 20%;
+}
+
+.sidebar ul {
+    padding: 8%;
+    margin: 0 auto;
+    width: 85%;
+    list-style: none;
+    background-color: #090909;
+}
+
+.sidebar h2 {
+    color: whitesmoke;
+    font-family: 'moonbold';
+    font-size: 18px;
+    height: 30px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.sidebar h4 {
+    color: whitesmoke;
+    font-family: 'moonlight';
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.sidebar p {
+    color: whitesmoke;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+
+.vsel-content {
+    border-bottom: 1px solid #FFBC4C !important;
+}
+
+.home {
+    height: 400px;
+    margin: 50px;
+    background-color: #A2A2A2;
+    box-shadow: 0 0 13px lightgrey;
+}
+
+.description {
+    display: flex;
+    height: 400px;
+}
+
+.description div {
+    width: 50%;
+    min-width: 50%;
+}
+
+.the-artist img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: #222;
+}
+
+.description-content p:first-child, .description-content p:last-child {
+    padding: 0 25px;
+    line-height: 20px;
+}
+
+.description-content p {
+    padding: 25px;
+}
+
+/* ==================================================
+   ICONS CONCERT EVENT
+   ================================================== */
+#vsel .vsel-meta-date:before {
+    content: "\f133";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+}
+#vsel .vsel-meta-time:before {
+    content: "\f017";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+}
+#vsel .vsel-meta-location:before {
+    content: "\f041";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+}
+#vsel .vsel-meta-link:before {
+    content: "\f145";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+}
+#vsel .vsel-meta-link a, #vsel .vsel-meta-link {
+    color: #FFA000;
+}
