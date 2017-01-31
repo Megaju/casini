@@ -47,7 +47,6 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                 </div>
-
                 <?php wd_slider(2); ?>
 
         </section>

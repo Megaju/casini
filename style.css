@@ -163,14 +163,14 @@ p {
 
 .home {
     height: 100%;
-    margin: 50px;
-    background-color: /*#cacaca*/ black;
-    box-shadow: 0 0 13px lightgrey;
+    margin: 50px;/*
+    box-shadow: 0 0 13px lightgrey;*/
 }
 
 .description {
     display: flex;
     height: 400px;
+    box-shadow: 0 0 13px lightgrey;
 }
 
 .description div {
@@ -240,11 +240,11 @@ p {
     background-color: black;
     margin-top: 100px;
     overflow-y: scroll;
+    box-shadow: 0 0 13px lightgrey;
 }
 
 .ecoute h1 {
     background-color: #FFA000;
-    margin-bottom: 0px;
     padding:  20px;
     color: black;
     margin-top: 0px;
