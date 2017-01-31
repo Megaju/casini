@@ -2,9 +2,10 @@
     <div class="container">
         <!-- SIDEBAR -->
         <?php get_sidebar(); ?>
-        
-        <!-- PRESENTATION -->
+
         <section class="home">
+
+            <!-- PRESENTATION -->
             <?php query_posts('category_name=home'); ?>
                 <?php if(have_posts()) : ?>
                     <?php $counter = 0; ?>
@@ -22,13 +23,12 @@
                                     </div>
                                 </div>
                     <?php endwhile; ?>
-                <?php endif; ?>     
-        
-        
-                <!-- ECOUTE -->
+
+                <?php endif; ?>
+
         <div class="ecoute">
             <h1>ECOUTER</h1>
-                <?php query_posts('category_name=écoute'); ?>
+                <?php query_posts('category_name=ecoute'); ?>
                 <?php if(have_posts()) : ?>
                     <?php $counter = 0; ?>
                         <?php while(have_posts() && $counter < 99) : the_post();?>
@@ -42,15 +42,19 @@
                                         <!-- article text -->
                                         <?php the_content(__('<i class="fa fa-3x fa-plus-circle read-more"></i>')); ?>
                                     </div>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
                                 </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>    
-        </div>
-        
+
+            </div>
+
+                <?php wd_slider(2); ?>
+
         </section>
-        
-        
-    </div>
+
+
+    </div> <!-- end container -->
+
     <?php get_footer(); ?>
 
     </body>
