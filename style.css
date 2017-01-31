@@ -119,6 +119,7 @@ p {
 .sidebar {
     max-width: 20%;
     min-width: 20%;
+    background-color: black;
 }
 
 .sidebar ul {
@@ -126,7 +127,6 @@ p {
     margin: 0 auto;
     width: 85%;
     list-style: none;
-    background-color: #090909;
 }
 
 .sidebar h2 {
@@ -162,7 +162,7 @@ p {
 }
 
 .home {
-    height: 400px;
+    height: 100%;
     margin: 50px;
     background-color: #A2A2A2;
     box-shadow: 0 0 13px lightgrey;
@@ -203,6 +203,7 @@ p {
     padding: 25px;
 }
 
+
 /* ==================================================
    ICONS CONCERT EVENT
    ================================================== */
@@ -228,4 +229,16 @@ p {
 }
 #vsel .vsel-meta-link a, #vsel .vsel-meta-link {
     color: #FFA000;
+}
+
+
+/* ==========================================================================
+   SECTION  D'ÉCOUTE
+   ========================================================================== */
+
+.ecoute {
+    height: 500px;
+    width: 100%;
+    background-color: red;
+    margin-top: 100px;
 }
