@@ -2,9 +2,10 @@
     <div class="container">
         <!-- SIDEBAR -->
         <?php get_sidebar(); ?>
-        
-        <!-- PRESENTATION -->
+
         <section class="home">
+
+            <!-- PRESENTATION -->
             <?php query_posts('category_name=home'); ?>
                 <?php if(have_posts()) : ?>
                     <?php $counter = 0; ?>
@@ -22,7 +23,12 @@
                                     </div>
                                 </div>
                     <?php endwhile; ?>
-                <?php endif; ?>     
+                <?php endif; ?>
+
+                <?php
+                echo do_shortcode("[metaslider id=21]"); 
+                ?>
+
         </section>
     </div>
     <?php get_footer(); ?>
