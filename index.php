@@ -50,6 +50,8 @@
 
                 <?php wd_slider(2); ?>
 
+                <?php echo do_shortcode("[contact-form-7 id='35' title='Contact form 1']"); ?>
+
         </section>
 
 
