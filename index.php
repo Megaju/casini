@@ -23,14 +23,39 @@
                                     </div>
                                 </div>
                     <?php endwhile; ?>
+
                 <?php endif; ?>
 
-                <?php
-                echo do_shortcode("[metaslider id=21]"); 
-                ?>
+                <!-- ECOUTE -->
+                <div class="ecoute">
+                    <h1>Me découvrir par le son</h1>
+                    <?php query_posts('category_name=home'); ?>
+                    <?php if(have_posts()) : ?>
+                        <?php $counter = 0; ?>
+                            <?php while(have_posts() && $counter < 1) :     the_post();?>
+                                <?php //$counter++ ?>
+                                    <!-- affichage des articles -->
+                                    <div class="description">
+                                        <!-- image -->
+                                        <div class="the-artist">
+                                            <?php the_post_thumbnail(array());?>
+                                        </div>
+                                        <div class="description-content">
+                                            <!-- article text -->
+                                            <?php the_content(__('<i class="fa  fa-3x fa-plus-circle    read-more"></i>')); ?>
+                                        </div>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                </div>
+
+                <?php wd_slider(2); ?>
 
         </section>
-    </div>
+
+
+    </div> <!-- end container -->
+
     <?php get_footer(); ?>
 
     </body>

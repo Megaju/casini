@@ -1,4 +1,4 @@
-<?php 
+<?php
 //fonction pour la modif de l'image du header
 $args = array(
 'width'         => 800,
@@ -13,4 +13,9 @@ if ( function_exists('register_sidebar') ) register_sidebar();
 add_theme_support( 'post-thumbnails' );
 //Menu personalisé
 register_nav_menus( array('Top' => 'Navigation principale',) );
+// jquery-3
+function bbx_enqueue_scripts() {
+wp_enqueue_script( 'jquery' );
+}
+add_action( 'wp_enqueue_scripts', 'bbx_enqueue_scripts' );
 ?>
