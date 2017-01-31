@@ -164,7 +164,7 @@ p {
 .home {
     height: 100%;
     margin: 50px;
-    background-color: #A2A2A2;
+    background-color: /*#cacaca*/ black;
     box-shadow: 0 0 13px lightgrey;
 }
 
@@ -235,8 +235,48 @@ p {
    SECTION  D'ÉCOUTE
    ========================================================================== */
 .ecoute {
-    height: 500px;
+    height: 800px;
     width: 100%;
-    background-color: red;
+    background-color: black;
     margin-top: 100px;
+    overflow-y: scroll;
+}
+
+.ecoute h1 {
+    background-color: #FFA000;
+    margin-bottom: 0px;
+    padding:  20px;
+    color: black;
+    margin-top: 0px;
+}
+
+.titre-musique {
+    display: flex;
+    background-color: black;
+}
+
+.titre-musique img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    padding: 40px;
+}
+
+.titre-musique div  {
+    padding: 40px 0px 40px 0px;
+}
+
+.titre-musique h3 {
+    margin-bottom: 5px;
+}
+
+.titre-musique p  {
+    padding: 5px 0px 15px 0px;
+    width: 90%;
+    text-align: justify;
+}
+
+.titre-musique audio {
+    width: 50vw !important;
 }
