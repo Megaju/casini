@@ -8,106 +8,161 @@
 #FFA000 -> #FFBC4C
 */
 
-@font-face {
+@font-face
+{
     font-family: 'moonbold';
+    font-weight: normal;
+    font-style: normal;
+
     src: url('fonts/moon_bold-webfont.woff2') format('woff2'), url('fonts/moon_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'moonlight';
-    src: url('fonts/moon_light-webfont.woff2') format('woff2'), url('fonts/moon_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+    src: url('fonts/moon_light-webfont.woff2') format('woff2'), url('fonts/moon_light-webfont.woff') format('woff');
 }
 
-body {
+body
+{
+    font-family: 'Open Sans';
+
     margin: 0;
-    background-color: #cacaca;
-    background-image: url(images/ps_neutral.png);
+
     color: whitesmoke;
-    font-family: "Open Sans";
+    background-color: #f1f1f1;
 }
 
-.container {
+.container
+{
     display: flex;
 }
 
-footer {
+footer
+{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+
     padding: 75px 0;
+
     text-align: center;
+
     background-color: #090909;
+
+    justify-content: space-around;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a
+{
     font-family: 'moonlight', sans-serif;
-    color: #FFA000;
+
+    color: #ffa000;
 }
 
-p {
+p
+{
     font-size: .8em;
+
     margin: 0;
 }
 
 
-.shadow {
+.shadow
+{
     background-color: #090909;
     background-image: url(img/header.jpg);
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
 }
 
-.shadow h1 {
-    margin: 0;
-    text-align: center;
-    padding-top: 100px;
+.shadow h1
+{
+    font-family: 'moonbold';
     font-size: 50px;
-    font-family: "moonbold";
-    color: #FFA000;
+
+    margin: 0;
+    padding-top: 100px;
+
+    text-align: center;
+
+    color: #ffa000;
 }
 
-.shadow p {
+.shadow p
+{
+    font-family: 'Open Sans';
+
     margin: 0;
-    text-align: center;
     padding-top: 5px;
     padding-bottom: 100px;
-    font-family: "Open Sans";
+
+    text-align: center;
 }
 
+.shadow-box
+{
+    margin-bottom: 100px;
+
+    box-shadow: 0 0 20px #aaa;
+}
 
 /* =====================================================
    NAVBAR
    ===================================================== */
-
-.menu-top-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.nav-height
+{
     height: 100px;
-    background-color: #090909;
-    padding-left: 0px;
 }
 
-.menu-top-container ul li {
+.menu-top-container
+{
+    position: fixed;
+    z-index: 99;
+
+    display: flex;
+
+    width: 100%;
+    height: 100px;
+    padding-left: 0;
+
+    background-color: #090909;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-top-container ul li
+{
+    font-family: 'moonlight';
+
     display: inline-block;
+
     padding: 5px;
-    font-family: "moonlight";
+
     cursor: pointer;
 }
 
-.menu-top-container ul a {
-    text-decoration: none;
+.menu-top-container ul a
+{
     padding: 20px;
+
+    text-decoration: none;
+
     color: whitesmoke;
-    border: 1px solid #555555;
+    border: 1px solid #555;
 }
 
-.menu-top-container ul a:hover {
+.menu-top-container ul a:hover
+{
     border: 1px solid transparent;
 }
 
@@ -116,90 +171,117 @@ p {
    SIDEBAR
    ========================================================================== */
 
-.sidebar {
-    max-width: 20%;
+.sidebar
+{
     min-width: 20%;
+    max-width: 20%;
+
     background-color: black;
 }
 
-.sidebar ul {
-    padding: 8%;
-    margin: 0 auto;
+.sidebar ul
+{
     width: 85%;
+    margin: 0 auto;
+    padding: 8%;
+
     list-style: none;
 }
 
-.sidebar h2 {
-    color: whitesmoke;
+.sidebar h2
+{
     font-family: 'moonbold';
     font-size: 18px;
+
     height: 30px;
+
+    color: whitesmoke;
     border-bottom: 1px solid whitesmoke;
 }
 
-.sidebar h4 {
-    color: whitesmoke;
+.sidebar h4
+{
     font-family: 'moonlight';
     font-size: 16px;
     font-weight: 100;
-}
 
-.sidebar p {
     color: whitesmoke;
-    font-family: "Open Sans";
-    font-size: 13px;
 }
 
-.sidebar a {
+.sidebar p
+{
+    font-family: 'Open Sans';
+    font-size: 13px;
+
+    color: whitesmoke;
+}
+
+.sidebar a
+{
+    font-family: 'Open Sans';
+    font-size: 13px;
+
     text-decoration: none;
+
     color: whitesmoke;
-    font-family: "Open Sans";
-    font-size: 13px;
 }
 
-.vsel-content {
-    border-bottom: 1px solid #FFBC4C !important;
+.vsel-content
+{
+    border-bottom: 1px solid #ffbc4c !important;
 }
 
-.home {
+.home
+{
     height: 100%;
-    margin: 50px;/*
-    box-shadow: 0 0 13px lightgrey;*/
+    margin: 50px;
 }
 
-.description {
+.description
+{
     display: flex;
+
     height: 400px;
-    box-shadow: 0 0 13px lightgrey;
 }
 
-.description div {
+.description div
+{
     width: 50%;
     min-width: 50%;
 }
 
-.the-artist img {
+.the-artist img
+{
     position: relative;
+    z-index: 2;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    z-index: 2;
 }
 
-.description-content {
+.description-content
+{
     display: flex;
     flex-direction: column;
+
+    color: #eee;
+    background-color: black;
+
     justify-content: center;
-    background-color: whitesmoke;
-    color: #222;
 }
 
-.description-content p:first-child, .description-content p:last-child {
-    padding: 0 25px;
+.description-content p:first-child,
+.description-content p:last-child
+{
     line-height: 20px;
+
+    padding: 0 25px;
 }
 
-.description-content p {
+.description-content p
+{
     padding: 25px;
 }
 
@@ -207,76 +289,214 @@ p {
 /* ==================================================
    ICONS CONCERT EVENT
    ================================================== */
-#vsel .vsel-meta-date:before {
-    content: "\f133";
-    font-family: "FontAwesome";
+#vsel .vsel-meta-date:before
+{
+    font-family: 'FontAwesome';
+
     margin-right: 5px;
+
+    content: '\f133';
 }
-#vsel .vsel-meta-time:before {
-    content: "\f017";
-    font-family: "FontAwesome";
+#vsel .vsel-meta-time:before
+{
+    font-family: 'FontAwesome';
+
     margin-right: 5px;
+
+    content: '\f017';
 }
-#vsel .vsel-meta-location:before {
-    content: "\f041";
-    font-family: "FontAwesome";
+#vsel .vsel-meta-location:before
+{
+    font-family: 'FontAwesome';
+
     margin-right: 5px;
+
+    content: '\f041';
 }
-#vsel .vsel-meta-link:before {
-    content: "\f145";
-    font-family: "FontAwesome";
+#vsel .vsel-meta-link:before
+{
+    font-family: 'FontAwesome';
+
     margin-right: 5px;
+
+    content: '\f145';
 }
-#vsel .vsel-meta-link a, #vsel .vsel-meta-link {
-    color: #FFA000;
+#vsel .vsel-meta-link a,
+#vsel .vsel-meta-link
+{
+    color: #ffa000;
 }
 
 /* ==========================================================================
    SECTION  D'ÉCOUTE
    ========================================================================== */
-.ecoute {
-    height: 800px;
+.ecoute
+{
+    overflow-y: hidden;
+
     width: 100%;
+    max-height: 600px;
+
     background-color: black;
-    margin-top: 100px;
-    overflow-y: scroll;
-    box-shadow: 0 0 13px lightgrey;
 }
 
-.ecoute h1 {
-    background-color: #FFA000;
-    padding:  20px;
+.title
+{
+    position: relative;
+    z-index: 1;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+
     color: black;
-    margin-top: 0px;
+    background-color: #ffa000;
 }
 
-.titre-musique {
+.titre-musique
+{
     display: flex;
+
     background-color: black;
 }
 
-.titre-musique img {
-    border-radius: 100%;
-    height: 100px;
+.titre-musique img
+{
+    display: block;
+
     width: 100px;
-    object-fit: cover;
+    height: 100px;
     padding: 40px;
+
+    border-radius: 100%;
+
+    object-fit: cover;
 }
 
-.titre-musique div  {
-    padding: 40px 0px 40px 0px;
+.titre-musique .music-content
+{
+    min-width: calc(90% - 100px);
+    padding: 40px 0 40px 0;
 }
 
-.titre-musique h3 {
+.titre-musique h3
+{
     margin-bottom: 5px;
 }
 
-.titre-musique p  {
-    padding: 5px 0px 15px 0px;
-    width: 90%;
-    text-align: justify;
+.titre-musique p
+{
+    padding: 5px 0 15px 0;
 }
 
-.titre-musique audio {
-    width: 60vw !important;
+.titre-musique audio
+{
+    width: 100vw !important;
+}
+
+/* ==========================================================================
+   SLIDER
+   ========================================================================== */
+.nivo-controlNav
+{
+    background-color: #0e0e0e;
+}
+
+
+/* ==========================================================================
+   SECTION  CONTACT
+   ========================================================================== */
+.wpcf7
+{
+    display: flex;
+
+    justify-content: center;
+}
+
+.wpcf7 p label
+{
+    font-weight: 700;
+
+    display: block;
+
+    margin-top: 25px;
+
+    color: #222;
+}
+
+.wpcf7 input
+{
+    height: 50px;
+}
+
+.wpcf7 input,
+.wpcf7 textarea
+{
+    font-size: 1.3em;
+
+    width: 50vw;
+    padding: 0 10px;
+
+    color: #777;
+    outline: 0;
+}
+
+.wpcf7 textarea
+{
+    padding: 10px;
+}
+
+.wpcf7 input:focus,
+.wpcf7 textarea:focus
+{
+    color: #ffa000;
+    border: 2px solid #ffa000;
+    outline: 1px solid #e49207;
+}
+
+.wpcf7 textarea:focus
+{
+    border: 1px solid #ffa000;
+}
+
+.wpcf7-submit
+{
+    display: block;
+
+    width: 200px !important;
+    margin: 25px auto;
+
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+
+    color: #fff !important;
+    border: 0;
+    background-color: #222;
+}
+
+.wpcf7-submit:hover
+{
+            filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+}
+
+.wpcf7-submit:focus
+{
+    border: 0 !important;
+    outline: 0 !important;
+
+            filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+}
+
+.wpcf7-validation-errors
+{
+    text-align: center;
+
+    background-color: #000;
+}
+div.wpcf7-response-output
+{
+    margin: -25px 0 15px 0 !important;
 }

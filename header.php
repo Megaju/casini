@@ -15,7 +15,8 @@
     </title>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-3.1.1.min.js"></script>
+    <!-- jquery-3 -->
+    <script type='text/javascript' src="<?php bloginfo('template_url'); ?>/js/jquery-3.1.1.min.js"></script>
     <!-- leave this for stats -->
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
@@ -35,6 +36,7 @@
 <div id="page">
     <!-- menu de navigation -->
     <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+    <div class="nav-height"></div>
 
     <div id="header" style='background-image:url(<?php header_image(); ?>)'>
         <div class="shadow">
