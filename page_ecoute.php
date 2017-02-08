@@ -1,3 +1,10 @@
+<?php
+/*
+Template Name: Page d'écoute
+*/
+?>
+
+
 <?php get_header(); ?>
     <div class="container">
         <!-- SIDEBAR -->
@@ -52,19 +59,6 @@
                         <?php endif; ?>
                 </div>
                 </div>
-
-                <!-- GALLERIE -->
-                <div id="slider" class="shadow-box">
-                <h2 class="title">Ma gallerie</h2>
-                <?php
-                echo do_shortcode("[metaslider id=22]");
-                ?>
-                </div>
-
-                <!-- CONTACT -->
-                <div id="contact" class="shadow-box">
-                <h2 class="title">Me contacter</h2>
-                <?php echo do_shortcode("[contact-form-7 id='35' title='Contact form 1']"); ?>
                 </div>
 
         </section>
