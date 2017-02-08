@@ -52,6 +52,11 @@ p {
     margin: 0;
 }
 
+h2 i {
+    color: black;
+    float: right;
+}
+
 .shadow {
     background-color: #090909;
     background-image: url(img/header.jpg);
@@ -90,7 +95,7 @@ p {
     height: 100px;
 }
 
-.menu-top-container {
+.menu-top-container, .menu {
     position: fixed;
     z-index: 99;
     display: flex;
@@ -102,21 +107,21 @@ p {
     align-items: center;
 }
 
-.menu-top-container ul li {
+.menu-top-container ul li, .menu ul li {
     font-family: 'moonlight';
     display: inline-block;
     padding: 5px;
     cursor: pointer;
 }
 
-.menu-top-container ul a {
+.menu-top-container ul a, .menu ul a {
     padding: 20px;
     text-decoration: none;
     color: whitesmoke;
     border: 1px solid #555;
 }
 
-.menu-top-container ul a:hover {
+.menu-top-container ul a:hover, .menu ul a:hover {
     border: 1px solid transparent;
 }
 
@@ -180,6 +185,7 @@ p {
 .home {
     height: 100%;
     margin: 50px !important;
+    width: 80%;
 }
 
 .description {
@@ -255,10 +261,13 @@ p {
    SECTION  D'ÉCOUTE
    ========================================================================== */
 
+#ecoute {
+    background-color: black;
+}
+
 .ecoute {
     overflow-y: hidden;
     width: 100%;
-    max-height: 600px;
     background-color: black;
 }
 
@@ -289,10 +298,12 @@ p {
 .titre-musique .music-content {
     min-width: calc(90% - 100px);
     padding: 40px 0 40px 0;
+    max-width: 70%;
 }
 
 .titre-musique h3 {
     margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 .titre-musique p {
@@ -430,3 +441,5 @@ div.wpcf7-response-output {
 .li3 {}
 
 .li4 {}
+
+}

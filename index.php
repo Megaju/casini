@@ -1,4 +1,22 @@
 <?php get_header(); ?>
+<div id="page">
+    <!-- menu de navigation -->
+    <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
+    <div class="nav-height"></div>
+
+    <div id="header" style='background-image:url(<?php header_image(); ?>)'>
+        <div class="shadow">
+            <!-- LOGO -->
+            <div class="logo"></div>
+
+            <!-- TITRE DU SITE ET SA DESCRIPTION -->
+            <h1><?php bloginfo('name'); ?></h1>
+            <p><?php bloginfo('description'); ?></p>
+
+        </div>
+    </div>
+</div>
+
     <div class="container">
         <!-- SIDEBAR -->
         <?php get_sidebar(); ?>
@@ -31,12 +49,13 @@
 
                 <!-- ECOUTE -->
                 <div id="ecoute" class="shadow-box">
-                <h2 class="title">ECOUTER</h2>
+                <h2 class="title">ECOUTER <a href="/casini/index.php/ecoute/" target="_blank"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+</a></h2>
                 <div class="ecoute content">
                         <?php query_posts('category_name=ecoute'); ?>
                         <?php if(have_posts()) : ?>
                             <?php $counter = 0; ?>
-                                <?php while(have_posts() && $counter < 99) : the_post();?>
+                                <?php while(have_posts() && $counter < 3) : the_post();?>
                                     <?php $counter++ ?>
                                         <!-- affichage des articles -->
                                         <div class="titre-musique">
@@ -56,7 +75,8 @@
 
                 <!-- GALLERIE -->
                 <div id="slider" class="shadow-box">
-                <h2 class="title">Ma gallerie</h2>
+                <h2 class="title">Ma gallerie <a href="/casini/index.php/gallery/" target="_blank"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+</a></h2>
                 <?php
                 echo do_shortcode("[metaslider id=22]");
                 ?>
