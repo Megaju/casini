@@ -2,6 +2,7 @@
     <div class="container">
         <!-- SIDEBAR -->
         <?php get_sidebar(); ?>
+        <div class="sidebar-fixed"></div>
 
         <section class="home">
             <!-- PRESENTATION -->
@@ -71,6 +72,7 @@
 
 
     </div> <!-- end container -->
+
     <?php wp_footer(); ?>
     <?php get_footer(); ?>
 
