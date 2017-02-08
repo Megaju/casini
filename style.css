@@ -171,8 +171,17 @@ p
    SIDEBAR
    ========================================================================== */
 
+.sidebar-fixed
+{
+    min-width: 20%;
+    max-width: 20%;
+
+    background-color: black;
+}
+
 .sidebar
 {
+    position: fixed;
     min-width: 20%;
     max-width: 20%;
 
