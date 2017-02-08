@@ -7,26 +7,22 @@ Template Name: Gallery
     <div class="container">
         <!-- SIDEBAR -->
         <?php get_sidebar(); ?>
+        <div class="sidebar-fixed"></div>
 
-        <section class="home">
-
+        <section class="home shadow-box">
+            <h2 class="title">Ma gallerie</h2>
+            <?php the_content(); ?>
         </section>
+
+        <style media="screen">
+            .home {
+                margin: 50px auto;
+            }
+        </style>
+
     </div><!-- end container -->
 
     <?php wp_footer(); ?>
     <?php get_footer(); ?>
-
-    <script type='text/javascript' src="<?php bloginfo('template_url'); ?>/js/jquery.gridster.js"></script>
-    <script>
-	$(document).ready(function() {
-        var gridster;
-        $(function() {
-            gridtster = $(".gridster > ul").gridster({
-                widget_margins: [10, 10],
-                widget_base_dimensions: [180, 180]
-            }).data('gridster').disable();
-        });
-    });
-    </script>
 
 </html>
