@@ -76,7 +76,7 @@
                 <!-- GALLERIE -->
                 <div id="slider" class="shadow-box">
                 <h2 class="title">Ma gallerie <a href="/casini/index.php/gallery/" target="_blank"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-</a></h2>
+        </a></h2>
                 <?php
                 echo do_shortcode("[metaslider id=22]");
                 ?>

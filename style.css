@@ -197,6 +197,14 @@ h2 i {
     min-width: 50%;
 }
 
+.back-even .description-content {
+    border-bottom: 1px solid #777;
+}
+
+.description-content h2 {
+    text-align: center;
+}
+
 .the-artist img {
     position: relative;
     z-index: 2;
@@ -339,23 +347,33 @@ h2 i {
     color: #222;
 }
 
-.wpcf7 input {
+.wpcf7 input, .post-password-form label input {
     height: 50px;
 }
 
-.wpcf7 input, .wpcf7 textarea {
+.wpcf7 input, .wpcf7 textarea, .post-password-form label input {
     font-size: 1.3em;
     width: 50vw;
     padding: 0 10px;
     color: #777;
     outline: 0;
+    border: 1px solid #777;
+    background-color: transparent}
+
+.post-password-form input {
+    width: 100px;
+    height: 51px;
+    background-color: #ffa000;
+    border: 0;
+    margin-top: 10px;
+    vertical-align: middle;
 }
 
 .wpcf7 textarea {
     padding: 10px;
 }
 
-.wpcf7 input:focus, .wpcf7 textarea:focus {
+.wpcf7 input:focus, .wpcf7 textarea:focus, .post-password-form label input:focus {
     color: #ffa000;
     border: 2px solid #ffa000;
     outline: 1px solid #e49207;
@@ -396,6 +414,14 @@ h2 i {
 
 div.wpcf7-response-output {
     margin: -25px 0 15px 0 !important;
+}
+
+.post-password-form p {
+    text-align: center;
+    padding:  15px 15px 15px 15px;
+    color: #777;
+    font-size: 0.9em;
+
 }
 
 
